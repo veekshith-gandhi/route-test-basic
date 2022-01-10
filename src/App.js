@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { About } from "./Components/About";
-import { Contact } from "./Components/Contact";
-import { Home } from "./Components/Home";
-import { Login } from "./Components/Login";
-import NavBar from "./Components/Navbar";
-import { Service } from "./Components/Service";
+import { About } from "./Components/pages/About";
+import { Contact } from "./Components/pages/Contact";
+import { Home } from "./Components/pages/Home";
+import { LoginPage } from "./Components/pages/Login";
+import NavBar from "./Components/pages/Navbar";
+import { Service } from "./Components/pages/Service";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/contact" component={Contact} />
-        <Route path="/login" component={Login} />
+        <Route path="/login" component={LoginPage} />
         <Route path="/service" component={Service} />
         <Route path="/about-us" component={About} />
       </Switch>

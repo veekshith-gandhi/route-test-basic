@@ -1,5 +1,5 @@
 import React from "react";
-export const LoginP = () => {
+export const LoginPage = () => {
   return (
     <div>
       <a>Login Page</a>
