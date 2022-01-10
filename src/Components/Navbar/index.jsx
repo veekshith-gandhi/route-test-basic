@@ -25,6 +25,9 @@ function NavBar() {
       <Link style={style} to="/services">
         Services
       </Link>
+      <Link style={style} to="/product">
+        product
+      </Link>
       <Link style={style} to="/contact">
         contact
       </Link>
