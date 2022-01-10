@@ -4,7 +4,7 @@ import { About } from "./Components/pages/About";
 import { Contact } from "./Components/pages/Contact";
 import { Home } from "./Components/pages/Home";
 import { LoginPage } from "./Components/pages/Login";
-import NavBar from "./Components/pages/Navbar";
+import NavBar from "./Components/Navbar/index";
 import { Service } from "./Components/pages/Service";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/service" component={Service} />
-        <Route path="/about-us" component={About} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/service" component={Service} />
+        <Route exact path="/about-us" component={About} />
       </Switch>
     </BrowserRouter>
   );
